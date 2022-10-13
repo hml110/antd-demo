@@ -52,7 +52,7 @@ export default {
 .page_content {
   width: 100%;
   height: 90%;
-  margin-top: 5px;
+  margin-top: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@ export default {
   /* border: 1px solid red; */
 }
 .page_content_right {
-  margin-bottom: 10px;
+  margin-left: 6px;
   width: 20%;
   height: 100%;
   /* border: 1px solid red; */

@@ -174,12 +174,12 @@ export default {
   methods: {
     showDrawer(value) {
       //触发自定义事件
-      console.log('我是MyFileOneCard我发送了消息', value)
+      console.log('我是MyFileOneCard,我发送了消息', value)
       this.$bus.$emit('test', true, value)
     },
     //修改原数据
     demo(value) {
-      console.log(' demo()执行了！！！')
+      // console.log(' demo()执行了！！！')
       if (value.id <= 4) {
         this.messages.obj1.forEach((obj) => {
           if (value.id == obj.id) {
@@ -223,14 +223,7 @@ export default {
       }
     },
   },
-  watch: {
-    price: {
-      immediate: true,
-      handler(newValue, oldValue) {
-        console.log('isHot被改变了', newValue, oldValue)
-      },
-    },
-  },
+
   mounted() {
     this.$bus.$on('modify', (value) => {
       this.demo(value)

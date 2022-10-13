@@ -20,19 +20,20 @@
               :wrapper-col="{ span: 16 }"
               @submit="handleSubmit">
         <!-- 表单项 -->
-        <a-form-item label="Id">
+        <a-form-item label="Id"
+                     v-show=false>
           <a-input style="width:200px"
                    :disabled='true'
                    v-decorator="['id',{ rules: [{ required: true, message: 'Please input your id!' }], initialValue: this.info.id, }]" />
         </a-form-item>
-        <a-form-item label="Price">
+        <a-form-item label="单据金额">
           <a-input style="width:200px"
                    v-decorator="['price',{ rules: [{ required: true, message: 'Please input your Price!' }], initialValue: this.info.price, }]" />
         </a-form-item>
-        <a-form-item label="Number">
+        <a-form-item label="单据数量">
           <a-input v-decorator="['number', { rules: [{ required: true, message: 'Please input your number!' }] ,initialValue: this.info.number,}]" />
         </a-form-item>
-        <a-form-item label="Description">
+        <a-form-item label="单据名称">
           <a-input v-decorator="['description', { rules: [{ required: true, message: 'Please input your description!' }],initialValue: this.info.description, }]" />
         </a-form-item>
         <!-- <a-form-item label="Schedule">
@@ -40,15 +41,15 @@
         </a-form-item> -->
         <a-form-item :wrapper-col="{ span: 24, offset: 2 }"
                      style="margin-top:30px;">
-          <a-button @click="onClose"
-                    style="border:1px solid red">
-            Cancel
+          <a-button type="danger"
+                    @click="onClose">
+            取消
           </a-button>
           <a-button type="primary"
                     html-type="submit"
                     style="margin-left:100px"
                     @click="onClose">
-            Submit
+            确定
           </a-button>
         </a-form-item>
       </a-form>
@@ -86,17 +87,18 @@ export default {
         if (!err) {
           console.log('Received values of form: ', values)
           //把数据传递给MyFileOneCard组件
-          console.log(values)
+          //   console.log(values)
           this.$bus.$emit('modify', values)
         }
       })
     },
     showInput(msg) {
+      console.log('showInput', this)
+      this.$forceUpdate()
       this.info.id = msg.id
       this.info.price = msg.msg1 + '.' + msg.msg2
       this.info.number = msg.msg3
       this.info.description = msg.msg4
-      console.log(this.info)
     },
   },
   mounted() {

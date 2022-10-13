@@ -14,7 +14,6 @@
 </template>
 
 <script>
-let a
 import Modal from '../Modal.vue'
 export default {
   name: 'ECharts',
@@ -78,7 +77,7 @@ export default {
             //最大的数据值，映射到 maxAngle。
             max: 100,
             //仪表盘半径，可以是相对于容器高宽中较小的一项的一半的百分比，也可以是绝对的数值。
-            radius: '95%',
+            radius: '90%',
             //饼图的中心（圆心）坐标，数组的第一项是横坐标，第二项是纵坐标。持设置成百分比，设置成百分比时第一项是相对于容器宽度，第二项是相对于容器高度。
             center: ['50%', '50%'],
 
@@ -88,7 +87,7 @@ export default {
               //是否显示进度条。
               show: true,
               //进度条宽度。
-              width: 12,
+              width: 10,
               //是否在两端显示成圆形。
               roundCap: false,
               //进度条样式。
@@ -104,11 +103,11 @@ export default {
                     {
                       //进度环的渐变色
                       offset: 0,
-                      color: '#FFFF00', // 0% 处的颜色
+                      color: '#BBB8CB', // 0% 处的颜色
                     },
                     {
                       offset: 1,
-                      color: '#FFFF00', // 100% 处的颜色
+                      color: '#BBB8CB', // 100% 处的颜色
                     },
                   ],
                 },
@@ -119,10 +118,12 @@ export default {
               roundCap: 'true',
               //仪表盘轴线样式。
               lineStyle: {
-                width: 12,
+                width: 10,
                 color: [
-                  [0, '#CCEFDD'],
-                  [1, '#CCEFDD'],
+                  //   [0, '#CCEFDD'],
+                  //   [1, '#CCEFDD'],
+                  [0, '#FFFFFF'],
+                  [1, '#FFFFFF'],
                 ],
               },
             },
@@ -137,8 +138,8 @@ export default {
             //仪表盘详情，用于显示数据。
             detail: {
               show: true,
-              color: '#FBFCFF',
-              fontSize: '18',
+              color: '#595959',
+              fontSize: '16',
               //是否开启标签的数字动画。
               valueAnimation: true,
               //相对于仪表盘中心的偏移位置，数组第一项是水平方向的偏移，第二项是垂直方向的偏移。可以是绝对的数值，也可以是相对于仪表盘半径的百分比。
@@ -173,20 +174,22 @@ export default {
 
 <style scoped>
 .task {
-  width: 310px;
-  height: 85px;
+  width: 230px;
+  height: 80px;
   /* border: 1px solid red; */
-  background-color: #7d8bf8;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fbfcff;
+  color: #595959;
+  padding-left: 30px;
 }
 .task_left {
-  width: 150px;
-  height: 85px;
+  width: 130px;
+  height: 80px;
   /* border: 1px solid red; */
-  padding-left: 20px;
+  /* padding-left: 20px; */
+  /* margin-left: 5px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,7 +208,7 @@ export default {
 }
 #main {
   /* border: 1px solid red; */
-  width: 150px;
-  height: 85px;
+  width: 90px;
+  height: 80px;
 }
 </style>

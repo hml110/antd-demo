@@ -192,7 +192,7 @@ export default {
 <style lang="less" scoped>
 /* 自定义样式 */
 /deep/ .ant-descriptions-row > td {
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
 
 .page_content_overview {

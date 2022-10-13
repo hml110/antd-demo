@@ -85,7 +85,7 @@ export default {
 }
 .ant-card {
   font-size: 12px !important;
-  padding: 5px !important;
+  padding: 0px !important;
 }
 
 .page_content_sidebar {
@@ -97,11 +97,13 @@ export default {
   justify-content: center;
   align-items: center;
   font-size: 12px;
+  /* border: 1px solid red; */
+  margin-bottom: 8px;
 }
 
 .page_content_sidebar_single {
   width: 100%;
-  height: 90%;
+  height: 100%;
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
@@ -111,14 +113,15 @@ export default {
 
 .page_content_sidebar_single_one {
   width: 250px;
-  height: 98px;
+  height: 105px;
   /* border: 1px solid red; */
-  margin-top: 8px;
+  /* padding: 4px; */
 }
 
 .page_content_sidebar_single_top {
   font-weight: bold;
   padding: 0 0 5px 5px;
+  /* border: 1px solid red; */
 }
 
 .page_content_sidebar_single_bottom {

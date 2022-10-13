@@ -8,11 +8,12 @@
     </a-col>
     <a-col :span="22">
       <a-row>
-        <a-col :span='16'
+        <a-col :span='18'
                class="member_content">
           <MyMemberOne />
         </a-col>
-        <a-col :span='8'>
+        <a-col :span='4'
+               style="padding-left:1px">
           <Echarts6 />
         </a-col>
       </a-row>
@@ -51,10 +52,10 @@ export default {
 }
 
 .member_content {
-  height: 86px;
+  height: 80px;
 }
 .member-title_info {
-  height: 86px;
+  height: 80px;
   width: 100%;
   /* border: 1px solid red; */
   font-weight: bolder;

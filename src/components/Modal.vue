@@ -8,15 +8,17 @@
     <a-modal v-model="visibleModal"
              title="计划完成情况"
              :width="500"
-             @ok="handleSubmit">
+             @ok="handleSubmit"
+             ok-text="确认"
+             cancel-text="取消">
       <a-form :form="form"
               :label-col="{ span: 8 }"
               :wrapper-col="{ span: 12 }"
               @submit="handleSubmit">
-        <a-form-item label="gross">
+        <a-form-item label="任务数">
           <a-input v-decorator="['gross', { rules: [{ required: true, message: 'Please input your gross!' }] ,initialValue: this.info.gross}]" />
         </a-form-item>
-        <a-form-item label="accomplish">
+        <a-form-item label="已完成">
           <a-input v-decorator="['accomplish', { rules: [{ required: true, message: 'Please input your accomplish!' }],initialValue: this.info.accomplish }]" />
         </a-form-item>
       </a-form>
