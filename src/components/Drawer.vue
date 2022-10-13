@@ -11,7 +11,8 @@
               :width="400"
               :visible="visible"
               :body-style="{ paddingBottom: '40px' }"
-              @close="onClose">
+              @close="onClose"
+              :destroyOnClose=true>
       <!-- 表单区域 -->
       <!-- :label-col 标签宽度-->
       <!-- :wrapper-col 输入框宽度-->
@@ -93,8 +94,6 @@ export default {
       })
     },
     showInput(msg) {
-      console.log('showInput', this)
-      this.$forceUpdate()
       this.info.id = msg.id
       this.info.price = msg.msg1 + '.' + msg.msg2
       this.info.number = msg.msg3
@@ -102,7 +101,7 @@ export default {
     },
   },
   mounted() {
-    // console.log(this.$form)
+    // console.log('mounted()')
     // 设置表单项初始值
     // this.form.getFieldDecorator('price', {
     //   initialValue: this.info.price,
@@ -114,6 +113,9 @@ export default {
       //调用处理方法
       this.showInput(msg)
     })
+  },
+  beforeDestroy() {
+    this.$bus.$off('modify')
   },
 }
 </script>

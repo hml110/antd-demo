@@ -229,6 +229,10 @@ export default {
       this.demo(value)
     })
   },
+
+  beforeDestroy() {
+    this.$bus.$off('test')
+  },
 }
 </script>
 
