@@ -103,17 +103,23 @@ export default {
 .ant-menu-item,
 .ant-menu-submenu-title {
   padding: 0px 9px !important;
+  margin: 0 0 !important;
 }
+.ant-menu-horizontal {
+  line-height: 26px;
+  border: 0px !important;
+}
+
 .menu {
   width: 100%;
-  height: 30px !important;
+  height: 25px !important;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 
 .menu_1 {
-  /* border: 1px solid red; */
+  //   border: 1px solid red;
   font-size: 12px;
 }
 

@@ -41,7 +41,7 @@ export default {
 <style scoped>
 .page_head_icon {
   width: 100%;
-  height: 30px;
+  height: 26px;
   /* border: 1px solid red; */
   background-color: #ffffff;
 }
@@ -50,6 +50,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 10px;
   /* border: 1px solid red; */
 }
 
@@ -65,5 +66,6 @@ export default {
 
 .page_head_icon_right div {
   padding-left: 10px;
+  /* border: 1px solid red; */
 }
 </style>

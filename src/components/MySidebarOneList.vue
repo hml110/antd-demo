@@ -113,7 +113,7 @@ export default {
 
 .page_content_sidebar_single_one {
   width: 250px;
-  height: 105px;
+  height: 104px;
   /* border: 1px solid red; */
   /* padding: 4px; */
 }
@@ -125,7 +125,7 @@ export default {
 }
 
 .page_content_sidebar_single_bottom {
-  padding: 0 0 5px 5px;
+  padding: 5px 0 5px 5px;
   /* border: 1px solid red; */
 }
 
@@ -133,6 +133,7 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-content: center;
+  padding-bottom: 5px;
 }
 
 .span_1 {

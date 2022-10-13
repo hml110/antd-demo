@@ -242,7 +242,7 @@ export default {
   height: 60%;
   font-size: 12px;
   /* border: 1px solid red; */
-  margin-bottom: 10px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

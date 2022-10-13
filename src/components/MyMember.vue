@@ -38,7 +38,7 @@ export default {
 .member {
   width: 100%;
   height: 18%;
-  margin: 5px 0;
+  margin: 4px 0;
   /* border: 1px solid red; */
   font-size: 12px;
   background-color: #f7f7f9;

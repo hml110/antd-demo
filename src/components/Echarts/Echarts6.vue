@@ -103,11 +103,11 @@ export default {
                     {
                       //进度环的渐变色
                       offset: 0,
-                      color: '#BBB8CB', // 0% 处的颜色
+                      color: '#5571C9', // 0% 处的颜色
                     },
                     {
                       offset: 1,
-                      color: '#BBB8CB', // 100% 处的颜色
+                      color: '#5571C9', // 100% 处的颜色
                     },
                   ],
                 },
@@ -122,8 +122,8 @@ export default {
                 color: [
                   //   [0, '#CCEFDD'],
                   //   [1, '#CCEFDD'],
-                  [0, '#FFFFFF'],
-                  [1, '#FFFFFF'],
+                  [0, '#CCCCCC'],
+                  [1, '#CCCCCC'],
                 ],
               },
             },

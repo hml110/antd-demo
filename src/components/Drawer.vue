@@ -41,14 +41,14 @@
           <a-input v-decorator="['schedule', { rules: [{ required: true, message: 'Please input your schedule!' }],initialValue: this.info.schedule }]" />
         </a-form-item> -->
         <a-form-item :wrapper-col="{ span: 24, offset: 2 }"
-                     style="margin-top:30px;">
+                     style="margin:0 0 0 150px;">
           <a-button type="danger"
                     @click="onClose">
             取消
           </a-button>
           <a-button type="primary"
                     html-type="submit"
-                    style="margin-left:100px"
+                    style="margin-left:40px"
                     @click="onClose">
             确定
           </a-button>

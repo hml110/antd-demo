@@ -12,11 +12,11 @@ export default {
 <style scoped>
 #input-1 {
   width: 100%;
-  height: 25px;
+  height: 24px;
   font-size: 13px;
   border-radius: 0;
   background-color: #ffffff;
-  margin-left: 5px;
+  /* margin-left: 5px; */
   /* border: 1px solid red; */
   text-align: center;
   text-overflow: ellipsis;
