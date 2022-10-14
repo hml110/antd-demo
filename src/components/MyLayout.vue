@@ -16,14 +16,14 @@
   </div>
 </template>
 <script>
-import MyTop from './MyTop.vue'
-import MyOverview from './MyOverview.vue'
-import MyMember from './MyMember.vue'
-import MyFile from './MyFile.vue'
-import MySidebar from './MySidebar.vue'
+import MyTop from '../components/Content/Top/MyTop.vue'
+import MyOverview from '../components/Content/Overview/MyOverview.vue'
+import MyMember from '../components/Content/Member/MyMember.vue'
+import MyFile from '../components/Content/File/MyFile.vue'
+import MySidebar from '../components/Content/Sidebar/MySidebar.vue'
 export default {
   components: { MyTop, MyOverview, MyMember, MyFile, MySidebar },
-  name: 'Layout',
+  name: 'MyLayout',
 }
 </script>
 

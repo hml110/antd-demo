@@ -10,7 +10,7 @@ import less from "less";
 //引入 iconfont
 import "./assets/iconfont/iconfont.js";
 //全局注册组件
-import SvgIcon from "@/components/Iconfont.vue";
+import SvgIcon from "./components/Inconfont/MyIconfont.vue";
 
 Vue.config.productionTip = false;
 

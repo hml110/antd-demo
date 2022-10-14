@@ -23,9 +23,9 @@
 
 <script>
 import MyMemberOne from './MyMemberOne.vue'
-import Echarts6 from './Echarts/Echarts6.vue'
+import Echarts6 from '../../Echarts/MyEcharts.vue'
 export default {
-  name: 'Member',
+  name: 'MyMember',
   components: {
     MyMemberOne,
     Echarts6,

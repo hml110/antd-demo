@@ -14,9 +14,9 @@
 </template>
 
 <script>
-import Modal from '../Modal.vue'
+import Modal from '../Content/Member/MyModal.vue'
 export default {
-  name: 'ECharts',
+  name: 'MyECharts',
   data() {
     return {
       infoWorks: {

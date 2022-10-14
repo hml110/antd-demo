@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import Drawer from './Drawer.vue'
+import Drawer from './MyDrawer.vue'
 export default {
   name: 'MyFileOneCard',
   data() {
